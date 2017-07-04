@@ -54,10 +54,14 @@ header > img  {
 #menu {
   display: flex;
   background-color: firebrick;
-  justify-content: space-between;
+  justify-content: center;
   color: white;
   padding: 0.75rem 0.25rem;
   margin-bottom: 1.5rem;
+}
+
+#smallScreen {
+  display: none;
 }
 
 #images {
@@ -76,7 +80,11 @@ header > img  {
 }
 
 .product {
-  width: 30%;
+  width: 45%;
+}
+
+.largeScreen {
+  display: none;
 }
 
 #images img {
@@ -118,14 +126,29 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
+  .largeScreen {
+    display: inline-block;
+  }
+
+  .product  {
+    width: 30%;
+  }
+
+  #menu {
+    justify-content: space-between;
+  }
+
   #smallScreen {
     display: none;
   }
 },
 
-@media only screen and (max-width: 1024px) {
-  .largeScreen {
-    display: none;
+
+@media only screen and width (min-width: 470px) {
+
+  #smallScreen {
+    display: inline-block;
   }
+
 
 }
