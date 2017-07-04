@@ -1,0 +1,114 @@
+body {
+  font-size: 18px;
+  width: 960px;
+  font-family: Helvetica;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  height: 2.82rem;
+}
+
+header > h3 {
+  font-size: 1rem;
+  padding: 0.95rem 0 0.66rem 0.5rem;
+  color: white;
+}
+
+header > img  {
+  height: 1.5rem;
+  margin: 0.66rem 0.5rem;
+}
+
+#banner {
+  background-image: url("../main-banner.jpeg");
+  height: 25rem;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+#bannerText {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding-left: 3rem;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+}
+
+#bannerText h4 {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+  padding-top: 2rem;
+
+}
+
+#bannerText h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+#menu {
+  display: flex;
+  background-color: firebrick;
+  justify-content: space-between;
+  color: white;
+  padding: 0.75rem 0;
+  margin-bottom: 1.5rem;
+}
+
+#images {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+
+#images img {
+  height: 9rem
+  padding: 2rem 0;
+  border: solid black 4px;
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: -0.5rem;
+  width: 30%;
+}
+
+#images h5 {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 30%;
+}
+
+#info {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.infoBox {
+  width: 35%;
+}
+
+.infoHead {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  height: 5rem;
+  background-color: black;
+  color: white;
+  text-align: left;
+  line-height: 5rem;
+}
