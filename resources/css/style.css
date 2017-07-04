@@ -23,31 +23,31 @@ header > img  {
 
 #banner {
   background-image: url("../main-banner.jpeg");
-  height: 25rem;
+  height: 15rem;
   width: 100%;
   background-size: cover;
-  position: relative;
+  position: static;
 }
 
 #bannerText {
   background-color: black;
   color: white;
   font-weight: bold;
-  padding-left: 3rem;
-  width: 20rem;
+  padding-left: 2rem;
   position: relative;
-  top: 9rem;
+  top: 7rem;
+  width: 100%;
 }
 
 #bannerText h4 {
-  font-size: 1rem;
+  font-size: 0.77rem;
   padding-bottom: 0.25rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 
 }
 
 #bannerText h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   padding-top: 0.25rem;
 }
 
@@ -58,10 +58,6 @@ header > img  {
   color: white;
   padding: 0.75rem 0.25rem;
   margin-bottom: 1.5rem;
-}
-
-#smallScreen {
-  display: none;
 }
 
 #images {
@@ -80,10 +76,15 @@ header > img  {
 }
 
 .product {
-  width: 45%;
+  width: 90%;
+  margin-left: 1rem;
 }
 
 .largeScreen {
+  display: none;
+}
+
+.mediumScreen {
   display: none;
 }
 
@@ -101,13 +102,13 @@ header > img  {
 
 #info {
   margin-top: 1.5rem;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 4rem;
 }
 
 .infoBox {
-  width: 35%;
+  width: 90%;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .infoHead {
@@ -121,7 +122,7 @@ footer {
   height: 5rem;
   background-color: black;
   color: white;
-  text-align: left;
+  text-align: center;
   line-height: 5rem;
 }
 
@@ -132,6 +133,7 @@ footer {
 
   .product  {
     width: 30%;
+    margin-left: 0;
   }
 
   #menu {
@@ -141,14 +143,96 @@ footer {
   #smallScreen {
     display: none;
   }
-},
 
+  #bannerText h4 {
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
 
-@media only screen and width (min-width: 470px) {
+  #bannerText h1 {
+    font-size: 2rem;
+  }
+
+  .mediumScreen {
+    display: block;
+  }
+
+  #banner {
+    height: 25rem;
+  }
+
+  #bannerText {
+    top: 9rem;
+    position: relative;
+    padding-left: 3rem;
+    width: 20rem;
+  }
+
+  #info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infoBox {
+    width: 35%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 470px) and (max-width: 1024px) {
 
   #smallScreen {
     display: inline-block;
   }
 
+  #bannerText h4 {
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
+
+  #bannerText h1 {
+    font-size: 2rem;
+  }
+
+  .mediumScreen {
+    display: block;
+  }
+
+  .product {
+    width: 47%;
+    margin-left: 0;
+  }
+
+  #banner {
+    height: 25rem;
+  }
+
+  #bannerText {
+    top: 9rem;
+    position: relative;
+    padding-left: 3rem;
+    width: 20rem;
+  }
+
+  #info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infoBox {
+    width: 35%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  footer {
+    text-align: left;
+  }
 
 }
