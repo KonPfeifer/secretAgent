@@ -1,6 +1,7 @@
 body {
   font-size: 18px;
   font-family: Helvetica;
+  max-width: 960px;
 }
 
 header {
